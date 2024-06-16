@@ -2,6 +2,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from './Views/Home';
 import About from './Views/About';
+import Product from "./Views/Product";
 import { 
   BrowserRouter as Router, 
   Routes, 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/product/:id" element={<Product />} />
         </Routes>
 
         <Footer />
