@@ -7,3 +7,21 @@
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
+
+.productCard{
+    width: 300px;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    align-items: center;
+    text-align:center;
+}
+
+.productCard img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
