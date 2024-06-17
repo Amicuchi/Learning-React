@@ -4,6 +4,7 @@
 import React from "react";
 import styled from 'styled-components'
 
+// Estilização do componente Loader usando styled-components
 const LoaderDevice = styled.div`
     border: 5px solid #d1d1d1;
     border-radius: 50%;
@@ -12,13 +13,17 @@ const LoaderDevice = styled.div`
     height: 50px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-`;
 
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+`;
+// Componente Loader que mostra um indicador de carregamento
 function Loader() {
     return(
         <>
-            {/* <div className="loader"></div> */}
-            <LoaderDevice />
+            <LoaderDevice />    {/* Indicador de carregamento */}
         </>
     );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from 'styled-components'
 
+// Estilização do componente ProductCard usando styled-components
 const ProductCardStyle = styled.div`
     width: 300px;
     border: 1px solid #3498db;
@@ -19,6 +20,7 @@ const ProductCardImgStyled = styled.img`
     border-radius: 10px;
 `;
 
+// Componente ProductCard que mostra os detalhes básicos de um produto
 function ProductCard(props) {
     return(
         <ProductCardStyle> 
